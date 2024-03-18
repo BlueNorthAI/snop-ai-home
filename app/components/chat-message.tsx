@@ -56,7 +56,7 @@ export function ChatMessage({ message, ...props }: ChatMessageProps) {
         )}
       </div>
 
-      <div className="mx-2 w-full  rounded-lg shadow-lg flex-1 space-y-2 overflow-hidden">
+      <div className="mx-2 w-full  rounded-lg flex-1 space-y-2 overflow-hidden">
         <MemoizedReactMarkdown
           className="flex w-full flex-col relative bg-white p-4 shadow rounded-lg prose break-words dark:prose-invert prose-p:leading-relaxed prose-pre:p-0 text-lg border"
           // remarkPlugins={[remarkGfm, remarkMath]}

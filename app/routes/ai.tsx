@@ -1,4 +1,4 @@
-import type { ActionFunctionArgs } from "@remix-run/node";
+import type { ActionFunctionArgs, LinksFunction } from "@remix-run/node";
 import { json, redirect } from "@remix-run/node";
 import { Outlet } from "@remix-run/react";
 import { Toaster } from "react-hot-toast";
@@ -8,6 +8,13 @@ import { Providers } from "~/components/providers";
 import { nanoid } from "~/lib/utils";
 import { clearChats, removeChat, shareChat } from "~/models/chat.server";
 import { requireUserId } from "~/session.server";
+
+
+import tailwindStylesheetUrl from "../styles/tailwind.css";
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: tailwindStylesheetUrl },
+];
 
 export const action = async ({ request }: ActionFunctionArgs) => {
   const userId = await requireUserId(request);

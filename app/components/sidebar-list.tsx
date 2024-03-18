@@ -28,6 +28,7 @@ export function SidebarList({ userId }: SidebarListProps) {
   const { chats } = useLoaderData<typeof loader>();
   // console.log("Inside sidebar list", chats);
 
+  
   return (
     <div className="flex flex-1 flex-col overflow-hidden">
       <div className="flex-1 overflow-auto">

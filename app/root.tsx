@@ -1,5 +1,4 @@
-import type { LinksFunction, LoaderFunctionArgs } from "@remix-run/node";
-import { json } from "@remix-run/node";
+import { LinksFunction, LoaderFunctionArgs, json } from "@remix-run/node";
 import {
   Links,
   LiveReload,
@@ -18,12 +17,14 @@ import {
 
 import { getUser, themeSessionResolver } from "~/session.server";
 
-import layoutStylesheetUrl from "./styles/layout.css";
-import tailwindStylesheetUrl from "./styles/tailwind.css";
+import kendoStylesheetUrl from "./styles/kendo.css";
+// import layoutStylesheetUrl from "./styles/layout.css";
+import tailwindStylesheetUrl from "./tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwindStylesheetUrl },
-  { rel: "stylesheet", href: layoutStylesheetUrl },
+  { rel: "stylesheet", href: kendoStylesheetUrl },
+  // { rel: "stylesheet", href: layoutStylesheetUrl },
 ];
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {

@@ -2,7 +2,7 @@ import { Button } from "~/components/Button";
 import { HeroBackground } from "~/components/HeroBackground";
 import blurCyanImage from "../../public/assets/blur-cyan.png";
 import blurIndigoImage from "../../public/assets/blur-indigo.png";
-import CardsLayout from "../components/Cards";
+import Cards from "../components/Cards";
 
 
 export function Hero() {
@@ -29,7 +29,7 @@ export function Hero() {
               <div className="mt-8 flex justify-center gap-4 ">
                 <Button href="/home">Get started</Button>
                 <Button href="/" variant="secondary">
-                  Our Capabilities
+                  Generative AI Capabilities
                 </Button>
               </div>
             </div>
@@ -57,7 +57,7 @@ export function Hero() {
             </div>
           </div>
         </div>
-        <CardsLayout />
+        <Cards />
       </div>
     </div>
   );

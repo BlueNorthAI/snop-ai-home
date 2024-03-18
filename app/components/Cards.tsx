@@ -11,14 +11,14 @@ const actions = [
   },
   {
     name: "Diagnostic Engine",
-    to: "http://localhost:50288/snop/truck",
+    to: "/snop/truck",
     img: "/assets/salesopplanning.png",
     description:
       "Across industries, organizations like yours are pivoting to manage increasingly complex supply chains, while juggling delivery expectations and cost.",
   },
   {
     name: "Optimization Engine",
-    to: "/demo/dashboard/demand",
+    to: "/snop/input",
     img: "/assets/diagnostics.png",
     description:
       "With shrinking product lifecycles, demand fluctuations and more granular customer segmentation, organizations like yours depend on intelligent decision support for their essential production.",

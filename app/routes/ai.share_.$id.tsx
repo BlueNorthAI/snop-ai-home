@@ -37,7 +37,7 @@ export const loader = async ({ params }: LoaderFunctionArgs) => {
 
 export default function SharePage() {
   const chat = useLoaderData<typeof loader>();
-  console.log(chat, "chat");
+
   return (
     <>
       <div className="flex-1 space-y-6">

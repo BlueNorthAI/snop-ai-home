@@ -26,6 +26,7 @@ const icons = {
   impact: ImpactIcon,
 }
 
+
 const iconStyles = {
   blue: '[--icon-foreground:theme(colors.slate.900)] [--icon-background:theme(colors.white)]',
   amber:

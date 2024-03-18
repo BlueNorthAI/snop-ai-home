@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 import blurCyanImage from "../../public/assets/blur-cyan.png";
 import blurIndigoImage from "../../public/assets/blur-indigo.png";
-import Capabilities from "../components/Capabilities";
+// import Capabilities from "../components/Capabilities";
 import { HeroBackground } from "../components/HeroBackground";
 import { Logo, Logomark } from "../components/Logo";
 import { ThemeSelector } from "../components/ThemeSelector";

@@ -1,6 +1,6 @@
 import trianglepng from "../images/trianglepng.png";
 
-import { Link } from "@remix-run/react"
+import { Link } from "@remix-run/react";
 
 import { Icon } from "~/components/Icon";
 
@@ -19,7 +19,7 @@ export default function Framework() {
                 <Icon icon="probe" className="h-16 w-16" />
 
                 <h2 className="not-prose font-display text-base text-slate-900 dark:text-white">
-                  <Link to="/docs/transportation">
+                  <Link to="/home/transport">
                     <span className="absolute -inset-px rounded-xl" />
                     Probe
                   </Link>
@@ -37,7 +37,7 @@ export default function Framework() {
                 <Icon icon="plan" className="h-16 w-16" />
 
                 <h2 className="not-prose font-display text-base text-slate-900 dark:text-white">
-                  <Link to="/docs/prod-plan">
+                  <Link to="/home/production">
                     <span className="absolute -inset-px rounded-xl" />
                     Plan
                   </Link>
@@ -54,7 +54,7 @@ export default function Framework() {
                 <Icon icon="perform" className="h-16 w-16" />
 
                 <h2 className="not-prose font-display text-base text-slate-900 dark:text-white">
-                  <Link to="/docs/ai-ct">
+                  <Link to="/home/production">
                     <span className="absolute -inset-px rounded-xl" />
                     Perform
                   </Link>

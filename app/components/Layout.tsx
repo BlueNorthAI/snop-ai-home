@@ -10,6 +10,7 @@ import { MobileNavigation } from "../components/MobileNavigation";
 import { Navigation } from "../components/Navigation";
 // import { Search } from "@/components/Search";
 import { ThemeSelector } from "../components/ThemeSelector";
+import Framework from "~/components/Framework";
 
 function GitHubIcon(props) {
   return (
@@ -78,14 +79,14 @@ function Header() {
 
 export function Layout() {
   const pathname = useLocation().pathname;
-  const isHomePage = pathname === "/home";
+  const isHomePage = pathname === "/";
 
   return (
     <div className="flex w-full flex-col">
       <Header />
+      {isHomePage ? <Hero /> : null}
+      {/* <Hero /> */}
 
-      <Hero />
-   
       <div className="flex h-24 w-full items-center justify-center">
         <div className="relative">
           <img
@@ -119,8 +120,8 @@ export function Layout() {
             <Navigation />
           </div>
         </div>
-
-        <Outlet />
+        {isHomePage ? <Framework /> : <Outlet />}
+        {/* <Outlet /> */}
       </div>
     </div>
   );
