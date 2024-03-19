@@ -61,22 +61,29 @@ const menus = [
     icon: MixIcon,
     current: true,
   },
-  {
+    {
     id: 4,
+    name: "Incidents",
+    to: "/snop/incidents",
+    icon: EnvelopeOpenIcon,
+    current: false,
+},
+  {
+    id: 5,
     name: "Truck",
     to: "/snop/truck",
     icon: BarChartIcon,
     current: false,
   },
   {
-    id: 5,
+    id: 6,
     name: "Report",
     to: "/snop/dashboard/overview",
     icon: PieChartIcon,
     current: false,
   },
   {
-    id: 6,
+    id: 7,
     name: "Email",
     to: "/snop/email",
     icon: EnvelopeOpenIcon,

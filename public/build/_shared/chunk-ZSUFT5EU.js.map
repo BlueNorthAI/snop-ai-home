@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../../../node_modules/@headlessui/react/dist/hooks/use-resolve-button-type.js"],
+  "sourcesContent": ["import{useState as o}from\"react\";import{useIsoMorphicEffect as r}from'./use-iso-morphic-effect.js';function i(t){var n;if(t.type)return t.type;let e=(n=t.as)!=null?n:\"button\";if(typeof e==\"string\"&&e.toLowerCase()===\"button\")return\"button\"}function T(t,e){let[n,u]=o(()=>i(t));return r(()=>{u(i(t))},[t.type,t.as]),r(()=>{n||e.current&&e.current instanceof HTMLButtonElement&&!e.current.hasAttribute(\"type\")&&u(\"button\")},[n,e]),n}export{T as useResolveButtonType};\n"],
+  "mappings": ";;;;;;;;;;;AAAA,mBAAyB;AAA0E,SAAS,EAAE,GAAE;AAAC,MAAI;AAAE,MAAG,EAAE;AAAK,WAAO,EAAE;AAAK,MAAI,KAAG,IAAE,EAAE,OAAK,OAAK,IAAE;AAAS,MAAG,OAAO,KAAG,YAAU,EAAE,YAAY,MAAI;AAAS,WAAM;AAAQ;AAAC,SAAS,EAAE,GAAE,GAAE;AAAC,MAAG,CAAC,GAAE,CAAC,QAAE,aAAAA,UAAE,MAAI,EAAE,CAAC,CAAC;AAAE,SAAO,EAAE,MAAI;AAAC,MAAE,EAAE,CAAC,CAAC;AAAA,EAAC,GAAE,CAAC,EAAE,MAAK,EAAE,EAAE,CAAC,GAAE,EAAE,MAAI;AAAC,SAAG,EAAE,WAAS,EAAE,mBAAmB,qBAAmB,CAAC,EAAE,QAAQ,aAAa,MAAM,KAAG,EAAE,QAAQ;AAAA,EAAC,GAAE,CAAC,GAAE,CAAC,CAAC,GAAE;AAAC;",
+  "names": ["o"]
+}

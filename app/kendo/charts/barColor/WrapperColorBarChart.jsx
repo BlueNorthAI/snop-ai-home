@@ -1,4 +1,4 @@
-import { BarColorChartContainer } from "~/kendo/charts/barColor/kendobarColorChart.client";
+import { BarColorChartContainer } from "../barColor/kendoBarColorChart.client";
 
 
 const Fallback = () => {

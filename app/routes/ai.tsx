@@ -10,12 +10,15 @@ import { clearChats, removeChat, shareChat } from "~/models/chat.server";
 import { requireUserId } from "~/session.server";
 
 
-import tailwindStylesheetUrl from "../styles/tailwind.css";
 
-export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: tailwindStylesheetUrl },
-];
+// // eslint-disable-next-line import/no-unresolved
+// import tailwindStylesheetUrl from "./tailwind.css";
 
+// export const links: LinksFunction = () => [
+//   { rel: "stylesheet", href: tailwindStylesheetUrl },
+
+//   // { rel: "stylesheet", href: layoutStylesheetUrl },
+// ];
 export const action = async ({ request }: ActionFunctionArgs) => {
   const userId = await requireUserId(request);
   const formData = await request.formData();

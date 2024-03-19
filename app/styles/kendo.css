@@ -19764,7 +19764,12 @@ kendo-sortable {
   border-width: 0;
   border-color: inherit;
   height: auto;
-  list-style: none;
+  list-style: disc;
+}
+.k-list-disc{
+  border-color: inherit;
+  height: auto;
+  list-style: disc;
 }
 .k-list-item,
 .k-list-optionlabel {
@@ -19781,6 +19786,7 @@ kendo-sortable {
   transition-duration: 200ms;
   transition-timing-function: ease;
 }
+
 .k-list-item.k-first::before,
 .k-first.k-list-optionlabel::before {
   content: "";

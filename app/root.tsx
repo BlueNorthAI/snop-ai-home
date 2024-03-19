@@ -18,12 +18,11 @@ import {
 import { getUser, themeSessionResolver } from "~/session.server";
 
 import kendoStylesheetUrl from "./styles/kendo.css";
-// import layoutStylesheetUrl from "./styles/layout.css";
 import tailwindStylesheetUrl from "./tailwind.css";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: tailwindStylesheetUrl },
   { rel: "stylesheet", href: kendoStylesheetUrl },
+  { rel: "stylesheet", href: tailwindStylesheetUrl },
   // { rel: "stylesheet", href: layoutStylesheetUrl },
 ];
 

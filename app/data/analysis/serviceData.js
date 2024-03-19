@@ -20,6 +20,27 @@ export const meetingTabs = [
   
 ]
 
+export const kpiChat = [
+  {
+    Name: "End Customer backorder Performance",
+    container: (
+      <WrapperMultiStackColChart
+        category={discountproductCategories_m}
+        series={discountproductSeries_m}
+      />
+    ),
+  },
+
+  {
+    Name: "OTIF Performance",
+    container: (
+      <WrapperMultiLineChart
+        category={cancellationCategories_m}
+        series={cancellationSeries_m}
+      />
+    ),
+  },
+];
 
 export const kpiService_m = [
   {
