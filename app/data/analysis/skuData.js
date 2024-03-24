@@ -12,7 +12,7 @@ pastSeries_m,
 past1Categories_m,
 past1Series_m,
  
-discountproductCategories_m, discountproductSeries_m, cancellationCategories_m, cancellationSeries_m
+
 } from '~/kendo/rawData/analysis/skuAnalysis'
 
 
@@ -31,7 +31,8 @@ export const meetingTabs = [
 
 export const kpiService_m = [
   {
-    Name: "Service SKU Trends",
+    Name: "Service SKU Trends (s1234)",
+    sub:"",
     container: (
       <WrapperMultiLineChart
         category={serviceCategories_m}
@@ -53,7 +54,8 @@ export const kpiService_m = [
 
 export const kpiInv_m = [
   {
-    Name: "Past and Project Inventory",
+    Name: "Past and Project Inventory (s1234)",
+    sub: "",
     container: (
       <WrapperMultiLineChart
         category={pastCategories_m}

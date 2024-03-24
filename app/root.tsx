@@ -18,12 +18,11 @@ import {
 import { getUser, themeSessionResolver } from "~/session.server";
 
 import kendoStylesheetUrl from "./styles/kendo.css";
-import tailwindStylesheetUrl from "./tailwind.css";
+import tailwindStylesheetUrl from "./styles/tailwind.css?url";
 
 export const links: LinksFunction = () => [
-  { rel: "stylesheet", href: kendoStylesheetUrl },
   { rel: "stylesheet", href: tailwindStylesheetUrl },
-  // { rel: "stylesheet", href: layoutStylesheetUrl },
+  { rel: "stylesheet", href: kendoStylesheetUrl },
 ];
 
 export const loader = async ({ request }: LoaderFunctionArgs) => {
@@ -46,7 +45,7 @@ export function App() {
   const data = useLoaderData<typeof loader>();
   const [theme] = useTheme();
   return (
-    <html lang="en" className={clsx(theme)}>
+    <html lang="en" className={clsx(theme,"h-full")}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />

@@ -48,7 +48,7 @@ export const kpiService_m = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/workerAnalysis",
+    Analyze: "/snop/dashboard/analysis/workerAnalysis",
   },
   {
     Name: "Production Volume",
@@ -63,7 +63,7 @@ export const kpiService_m = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/mfgperAnalysis",
+    Analyze: "/snop/dashboard/analysis/mfgperAnalysis",
   },
   {
     Name: "Production Downtime",
@@ -78,7 +78,7 @@ export const kpiService_m = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/mfgquaAnalysis",
+    Analyze: "/snop/dashboard/analysis/mfgquaAnalysis",
   },
   {
     Name: "Production Cost",
@@ -93,7 +93,7 @@ export const kpiService_m = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/costAnalysis",
+    Analyze: "/snop/dashboard/analysis/costAnalysis",
   },
   {
     Name: "On-Time Shipment",
@@ -108,7 +108,7 @@ export const kpiService_m = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/ontimeAnalysis",
+    Analyze: "/snop/dashboard/analysis/ontimeAnalysis",
   },
   {
     Name: "Right First Time",
@@ -118,7 +118,7 @@ export const kpiService_m = [
     container: <WrapperWaterfallChart data={netSeries_m} />,
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/ontimeAnalysis",
+    Analyze: "/snop/dashboard/analysis/ontimeAnalysis",
   },
   {
     Name: "Inventory Trunover",
@@ -133,7 +133,7 @@ export const kpiService_m = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/inventoryAnalysis",
+    Analyze: "/snop/dashboard/analysis/inventoryAnalysis",
   },
   {
     Name: "Health & Saftey Incidents",
@@ -145,7 +145,7 @@ export const kpiService_m = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/safetyAnalysis",
+    Analyze: "/snop/dashboard/analysis/safetyAnalysis",
   },
 ];
 
@@ -223,7 +223,7 @@ export const kpiService_q = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/agreementAnalysis",
+    Analyze: "/snop/dashboard/analysis/agreementAnalysis",
   },
   {
     Name: "Right First Time",
@@ -338,7 +338,7 @@ export const kpiService_y = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/agreementAnalysis",
+    Analyze: "/snop/dashboard/analysis/agreementAnalysis",
   },
   {
     Name: "Right First Time",

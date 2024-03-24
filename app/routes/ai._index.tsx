@@ -17,7 +17,6 @@ export const loader = async ({ request }: LoaderFunctionArgs) => {
   return json({ chats });
 };
 
-
 export default function ChatLayout() {
   const id = nanoid();
   // console.log("id", id);

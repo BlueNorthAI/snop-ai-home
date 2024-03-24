@@ -1,42 +1,24 @@
+import { Squares2X2Icon } from "@heroicons/react/20/solid";
 import {
   CubeIcon,
   GearIcon,
-  PersonIcon,
   PieChartIcon,
   MixIcon,
   BarChartIcon,
   EnvelopeOpenIcon,
-
 } from "@radix-ui/react-icons";
-import {
-  TableCellsIcon,
-  ArrowTrendingUpIcon,
-  ChartBarIcon,
-  UserCircleIcon,
-  CpuChipIcon,
-  Squares2X2Icon,
-  Cog8ToothIcon,
-  ChatBubbleBottomCenterTextIcon,
-  TicketIcon,
-  ExclamationTriangleIcon,
-  WrenchScrewdriverIcon,
-  ArrowRightOnRectangleIcon,
-  TruckIcon,
-} from "@heroicons/react/20/solid";
-import {  LinksFunction } from "@remix-run/node";
+import { type LinksFunction } from "@remix-run/node";
 import { Outlet, NavLink, Link } from "@remix-run/react";
 import { useState } from "react";
 
-// import { v4 as uuidv4 } from "uuid";
-// eslint-disable-next-line import/no-unresolved
-import logoAssetUrl from "../../public/assets/logo.png";
-// import kendoStylesheetUrl from "../styles/kendo.css";
-// import tailwindStylesheetUrl from "../styles/tailwind.css";
+import logoAssetUrl from "../images/logo1.png";
+import styles from "../tailwind.css?url";
 
-// export const links: LinksFunction = () => [
-//   { rel: "stylesheet", href: tailwindStylesheetUrl },
-//   { rel: "stylesheet", href: kendoStylesheetUrl },
-// ];
+
+export const links: LinksFunction = () => [
+  { rel: "stylesheet", href: styles },
+  { rel: "icon", type: "image/svg+xml", href: logoAssetUrl },
+];
 
 const menus = [
   {
@@ -61,13 +43,13 @@ const menus = [
     icon: MixIcon,
     current: true,
   },
-    {
+  {
     id: 4,
     name: "Incidents",
     to: "/snop/incidents",
     icon: EnvelopeOpenIcon,
     current: false,
-},
+  },
   {
     id: 5,
     name: "Truck",
@@ -88,10 +70,8 @@ const menus = [
     to: "/snop/email",
     icon: EnvelopeOpenIcon,
     current: false,
-}
-
+  },
 ];
-
 function classNames(
   ...classes: (string | undefined | null | boolean | number)[]
 ): string {
@@ -102,45 +82,44 @@ export default function Sidebar() {
   const [open, setOpen] = useState(true);
 
   return (
-
-    <div className="flex h-screen">
+    <div className="flex h-full">
       <div
         className={`bg-blue-900  ${
           open ? "w-20" : "w-16"
         } flex flex-col text-gray-100 duration-500 `}
       >
         <div className="flex-1">
-           <img
-              className="cursor-poniter mx-auto h-8 w-8 justify-center "
+          <div className="flex items-center justify-center bg-white py-1">
+            <img
+              className="cursor-poniter mx-auto h-14 w-14 justify-center "
               src={logoAssetUrl}
               alt="logo"
               onClick={() => setOpen(!open)}
             />
+          </div>
 
-          <nav aria-label="Sidebar" className="flex flex-col items-center">
-            <div className="static mt-2 w-full space-y-1 px-2">
-              {menus?.map((item) => (
+          <nav aria-label="Sidebar" className="flex items-center">
+            <div className="static mt-4 w-full  space-y-1 px-2">
+              {menus.map((item, index) => (
                 <NavLink
                   to={item.to}
-                  key={item.name}
+                  key={item.id}
                   className={({ isActive }) =>
                     classNames(
                       isActive
-                        ? "bg-blue-800 text-white"
-                        : "text-blue-100 hover:bg-blue-800 hover:text-white",
-                      "group flex w-full flex-col items-center rounded-md p-1 text-xs font-medium",
+                        ? "bg-sky-500 text-white"
+                        : "text-white hover:bg-blue-800 hover:text-blue-200",
+                      "group flex w-full flex-col items-center rounded-md p-3 text-sm font-medium",
                     )
                   }
                 >
-                  <div className="p-1">
-                    <item.icon className="h-5 w-5" aria-hidden="true" />
-                  </div>
+                  <item.icon className="h-6 w-6" aria-hidden="true" />
                   <h2
                     style={{
-                      transitionDelay: `${item + 3}00ms`,
+                      transitionDelay: `${index * 100}ms`,
                     }}
                     className={`whitespace-pre duration-500 ${
-                      !open && "translate-x-28  opacity-0"
+                      !open && "translate-x-28 overflow-hidden opacity-0 "
                     }`}
                   >
                     {item?.name}
@@ -148,7 +127,7 @@ export default function Sidebar() {
                   <h2
                     className={`${
                       open && "hidden"
-                    } absolute left-48  z-10 w-0 overflow-hidden whitespace-pre rounded-md bg-blue-800 px-0 py-0 font-semibold text-blue-100 drop-shadow-lg group-hover:left-14 group-hover:w-fit group-hover:px-2 group-hover:py-1 group-hover:duration-300  `}
+                    } absolute left-48 z-10 w-0 overflow-hidden whitespace-pre rounded-md bg-blue-800 px-0 py-0 font-semibold text-blue-100 drop-shadow-lg group-hover:left-14 group-hover:w-fit group-hover:px-2 group-hover:py-1 group-hover:duration-300  `}
                   >
                     {item?.name}
                   </h2>
@@ -157,17 +136,16 @@ export default function Sidebar() {
             </div>
           </nav>
         </div>
-
-        <div className="mb-2">
-          <Link to="/demo/appbar">
+        <div className="">
+          <Link to="/snop/appbar">
             <div
               className={classNames(
                 "text-blue-100 hover:bg-blue-800 hover:text-white",
-                "group flex w-full flex-col items-center rounded-md p-2 text-xs font-medium",
+                "group flex w-full flex-col items-center rounded-md p-3 text-xs font-medium",
               )}
             >
-              <div className="p-1">
-                <Squares2X2Icon className="h-5 w-5" aria-hidden="true" />
+              <div className="">
+                <Squares2X2Icon className="h-6 w-6" aria-hidden="true" />
               </div>
               <h2
                 className={`whitespace-pre duration-500 ${
@@ -181,7 +159,7 @@ export default function Sidebar() {
                   open && "hidden"
                 } absolute left-48 z-10 w-0 overflow-hidden whitespace-pre rounded-md bg-blue-800 px-0 py-0 font-semibold text-blue-100 drop-shadow-lg group-hover:left-14 group-hover:w-fit group-hover:px-2 group-hover:py-1 group-hover:duration-300  `}
               >
-                Appbar
+                User Profile
               </h2>
             </div>
           </Link>
@@ -189,10 +167,8 @@ export default function Sidebar() {
       </div>
 
       {/* appbar */}
-      <div className="flex flex-1 flex-col h-screen overflow-y-auto bg-gray-100">
-        <main>
-          <Outlet />
-        </main>
+      <div className="flex flex-1 flex-col overflow-y-auto bg-gray-100">
+        <Outlet />
       </div>
     </div>
   );

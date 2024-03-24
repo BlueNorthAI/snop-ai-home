@@ -1,6 +1,5 @@
 import { Link } from "@remix-run/react";
 
-
 const actions = [
   {
     name: "Generative AI Based Control Tower",
@@ -26,7 +25,7 @@ const actions = [
 
   {
     name: "Execution Engine",
-    to: "/demo/dashboard/inventory",
+    to: "/snop/dashboard/inventory",
     img: "/assets/kpicard.png",
     description:
       "Across industries, organizations like yours are pivoting to manage increasingly complex supply chains, while juggling delivery expectations and cost.",

@@ -89,8 +89,8 @@ export default function TaskPage() {
             </h2>
           </div>
 
-          <div className="m-4 bg-white rounded-lg p-4">
-            <DataTable data={scenarioList} columns={columns as ColumnDef<JsonifyObject<{ scenario_id: string | null; description: string | null; CreatedAt: Date | null; UpdatedAt: Date | null; module: string | null; Status: string | null; }>, unknown>[]} />
+          <div className="m-4 bg-white rounded-lg">
+            <DataTable data={scenarioList} columns={columns} />
           </div>
         </div>
       </div>

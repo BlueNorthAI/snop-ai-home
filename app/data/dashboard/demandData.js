@@ -43,7 +43,7 @@ export const kpiChat = [
     TargetAch: 75,
     container: <WrapperPieChart series={shipmentsData_m} />,
     status: "Above Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Cancellations",
@@ -57,7 +57,7 @@ export const kpiChat = [
       />
     ),
     status: "Below Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
 ];
 
@@ -69,7 +69,7 @@ export const kpiService_m = [
     TargetAch: 75,
     container: <WrapperPieChart series={shipmentsData_m} />,
     status: "Above Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Cancellations",
@@ -83,7 +83,7 @@ export const kpiService_m = [
       />
     ),
     status: "Below Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "MAPE",
@@ -97,7 +97,7 @@ export const kpiService_m = [
       />
     ),
     status: "On Track",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Top return locations",
@@ -111,7 +111,7 @@ export const kpiService_m = [
       />
     ),
     status: "Below Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Late Shipments",
@@ -125,7 +125,7 @@ export const kpiService_m = [
       />
     ),
     status: "On Track",
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
   {
     Name: "On Time Shipment %",
@@ -139,7 +139,7 @@ export const kpiService_m = [
       />
     ),
     status: "Below Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Perfect Order %",
@@ -153,7 +153,7 @@ export const kpiService_m = [
       />
     ),
     status: "On Track",
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
   {
     Name: "Order to Invoice Cycle Time",
@@ -167,7 +167,7 @@ export const kpiService_m = [
       />
     ),
     status: "Above Target",
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
 ];
 
@@ -179,7 +179,7 @@ export const kpiService_q = [
     TargetAch: 75,
     container: <WrapperPieChart series={shipmentsData_m} />,
     status: "Above Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Cancellations",
@@ -193,7 +193,7 @@ export const kpiService_q = [
       />
     ),
     status: "Below Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "MAPE",
@@ -207,7 +207,7 @@ export const kpiService_q = [
       />
     ),
     status: "On Track",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Top return locations",
@@ -221,7 +221,7 @@ export const kpiService_q = [
       />
     ),
     status: "Below Target",
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Late Shipments",
@@ -236,7 +236,7 @@ export const kpiService_q = [
     ),
     status: "On Track",
 
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
   {
     Name: "On Time Shipment %",
@@ -251,7 +251,7 @@ export const kpiService_q = [
     ),
     status: "Below Target",
 
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Perfect Order %",
@@ -266,7 +266,7 @@ export const kpiService_q = [
     ),
     status: "On Track",
 
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
   {
     Name: "Order to Invoice Cycle Time",
@@ -281,7 +281,7 @@ export const kpiService_q = [
     ),
     status: "Above Target",
 
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
 ];
 
@@ -294,7 +294,7 @@ export const kpiService_y = [
     container: <WrapperPieChart series={shipmentsData_m} />,
     status: "Above Target",
 
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Cancellations",
@@ -309,7 +309,7 @@ export const kpiService_y = [
     ),
     status: "Below Target",
 
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "MAPE",
@@ -324,7 +324,7 @@ export const kpiService_y = [
     ),
     status: "On Track",
 
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Top return locations",
@@ -339,7 +339,7 @@ export const kpiService_y = [
     ),
     status: "Below Target",
 
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Late Shipments",
@@ -354,7 +354,7 @@ export const kpiService_y = [
     ),
     status: "On Track",
 
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
   {
     Name: "On Time Shipment %",
@@ -369,7 +369,7 @@ export const kpiService_y = [
     ),
     status: "Below Target",
 
-    Analyze: "/demo/dashboard/analysis/demandAnalysis",
+    Analyze: "/snop/dashboard/analysis/demandAnalysis",
   },
   {
     Name: "Perfect Order %",
@@ -384,7 +384,7 @@ export const kpiService_y = [
     ),
     status: "On Track",
 
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
   {
     Name: "Order to Invoice Cycle Time",
@@ -399,6 +399,6 @@ export const kpiService_y = [
     ),
     status: "Above Target",
 
-    Analyze: "/demo/dashboard/analysis/orderAnalysis",
+    Analyze: "/snop/dashboard/analysis/orderAnalysis",
   },
 ];

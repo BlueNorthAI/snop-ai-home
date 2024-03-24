@@ -53,7 +53,7 @@ export default function SpendRoute() {
         <div className="flex items-center justify-between p-2 ">
           <div className="m-2 flex-1">
             <h2 className="text-3xl font-bold leading-7 text-gray-900">
-              Demand Dashboard
+              Spend Dashboard
             </h2>
           </div>
           <div className="flex p-1 align-middle ">

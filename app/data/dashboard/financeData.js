@@ -50,7 +50,7 @@ export const kpiService_m = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Current Ratio",
@@ -65,7 +65,7 @@ export const kpiService_m = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Inventory Turnover Ratio",
@@ -77,7 +77,7 @@ export const kpiService_m = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Debt to Equity Ratio",
@@ -92,7 +92,7 @@ export const kpiService_m = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Cash Conversion Cycle",
@@ -107,7 +107,7 @@ export const kpiService_m = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Fixed Assets Turnover Ratio",
@@ -122,7 +122,7 @@ export const kpiService_m = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Return on Equity %",
@@ -134,7 +134,7 @@ export const kpiService_m = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "//demo/dashboard/analysis/profitAnalysis",
+    Analyze: "//snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Return on Assets %",
@@ -146,7 +146,7 @@ export const kpiService_m = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
 ];
 
@@ -164,7 +164,7 @@ export const kpiService_q = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Current Ratio",
@@ -179,7 +179,7 @@ export const kpiService_q = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Inventory Turnover Ratio",
@@ -191,7 +191,7 @@ export const kpiService_q = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Debt to Equity Ratio",
@@ -206,7 +206,7 @@ export const kpiService_q = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Cash Conversion Cycle",
@@ -221,7 +221,7 @@ export const kpiService_q = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Fixed Assets Turnover Ratio",
@@ -236,7 +236,7 @@ export const kpiService_q = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Return on Equity %",
@@ -248,7 +248,7 @@ export const kpiService_q = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "//demo/dashboard/analysis/profitAnalysis",
+    Analyze: "//snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Return on Assets %",
@@ -260,7 +260,7 @@ export const kpiService_q = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
 ];
 
@@ -278,7 +278,7 @@ export const kpiService_y = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Current Ratio",
@@ -293,7 +293,7 @@ export const kpiService_y = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Inventory Turnover Ratio",
@@ -305,7 +305,7 @@ export const kpiService_y = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/opexpenseAnalysis",
+    Analyze: "/snop/dashboard/analysis/opexpenseAnalysis",
   },
   {
     Name: "Debt to Equity Ratio",
@@ -320,7 +320,7 @@ export const kpiService_y = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Cash Conversion Cycle",
@@ -335,7 +335,7 @@ export const kpiService_y = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Fixed Assets Turnover Ratio",
@@ -350,7 +350,7 @@ export const kpiService_y = [
     ),
     status: "Below Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Return on Equity %",
@@ -362,7 +362,7 @@ export const kpiService_y = [
     ),
     status: "On Track",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "//demo/dashboard/analysis/profitAnalysis",
+    Analyze: "//snop/dashboard/analysis/profitAnalysis",
   },
   {
     Name: "Return on Assets %",
@@ -374,6 +374,6 @@ export const kpiService_y = [
     ),
     status: "Above Target",
     Explore: <WrapperGrid rowData={carData} />,
-    Analyze: "/demo/dashboard/analysis/profitAnalysis",
+    Analyze: "/snop/dashboard/analysis/profitAnalysis",
   },
 ];

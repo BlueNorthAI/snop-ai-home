@@ -1,8 +1,7 @@
-
 import { Link } from "@remix-run/react";
 import { HeroBackground } from "~/components/HeroBackground";
 import blurCyanImage from "../../public/assets/blur-cyan.png";
-import blurIndigoImage from "../../public/assets/blur-indigo.png"
+import blurIndigoImage from "../../public/assets/blur-indigo.png";
 import { Logo, Logomark } from "~/components/Logo";
 
 export default function Chart() {
@@ -138,7 +137,7 @@ export default function Chart() {
                   </div>
 
                   <div>
-                    <Link to="/demo/dashboard">
+                    <Link to="/snop/dashboard">
                       <button
                         type="submit"
                         className="flex w-full justify-center rounded-md bg-gradient-blue px-3 py-1.5 text-sm font-semibold leading-6 text-gray-900 shadow-sm hover:bg-blue-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"

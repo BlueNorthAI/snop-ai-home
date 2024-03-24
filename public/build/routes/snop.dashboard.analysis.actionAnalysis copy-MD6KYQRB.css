@@ -1,0 +1,13 @@
+/* css-side-effects-plugin-ns:app\kendo\map\MyChart.css */
+#container {
+  height: 500px;
+  min-width: 310px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.loading {
+  margin-top: 10em;
+  text-align: center;
+  color: gray;
+}
+/*# sourceMappingURL=/build/routes/snop.dashboard.analysis.actionAnalysis copy-MD6KYQRB.css.map */

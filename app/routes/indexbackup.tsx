@@ -42,7 +42,7 @@ const actions = [
   },
   {
     name: "Optimization Engine",
-    to: "/demo/dashboard/demand",
+    to: "/snop/dashboard/demand",
     img: "/assets/diagnostics.png",
     description:
       "With shrinking product lifecycles, demand fluctuations and more granular customer segmentation, organizations like yours depend on intelligent decision support for their essential production.",
@@ -50,14 +50,14 @@ const actions = [
 
   {
     name: "Execution Engine",
-    to: "/demo/dashboard/inventory",
+    to: "/snop/dashboard/inventory",
     img: "/assets/kpicard.png",
     description:
       "Across industries, organizations like yours are pivoting to manage increasingly complex supply chains, while juggling delivery expectations and cost.",
   },
 ];
 const navigation = [
-  { name: "Application", to: "/demo/dashboard/optimizer/optimize" },
+  { name: "Application", to: "/snop/dashboard/optimizer/optimize" },
   { name: "Features", to: "#" },
   { name: "Marketplace", to: "#" },
   { name: "Company", to: "#" },
@@ -85,12 +85,9 @@ function Header() {
           : "dark:bg-transparent",
       )}
     >
-      <div className="mr-6 flex lg:hidden">
-        {/* <MobileNavigation /> */}
-      </div>
+      <div className="mr-6 flex lg:hidden">{/* <MobileNavigation /> */}</div>
       <div className="relative flex flex-grow basis-0 items-center">
         <Link to="/" aria-label="Home page">
-     
           <Logo className=" h-9 w-auto fill-slate-700  dark:fill-sky-100" />
         </Link>
       </div>
@@ -215,18 +212,17 @@ export default function Example() {
             ))}
           </ul>
         </div>
-       
-          <div className="flex h-24 w-full items-center justify-center">
-            <h1 className="max-w-2xl font-display text-5xl tracking-tight text-white ">
-              Our Capabilities
-            </h1>
-          </div>
-          <div className="mx-auto h-1 w-1/3 bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 "></div>
-          
+
+        <div className="flex h-24 w-full items-center justify-center">
+          <h1 className="max-w-2xl font-display text-5xl tracking-tight text-white ">
+            Our Capabilities
+          </h1>
+        </div>
+        <div className="mx-auto h-1 w-1/3 bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 "></div>
+
         <div className="mx-auto h-1 w-1/3 bg-gradient-to-r from-indigo-200 via-sky-400 to-indigo-200 "></div>
         <Capabilities />
-        </div>
-    
+      </div>
     </>
   );
 }
