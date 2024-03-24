@@ -1,8 +1,6 @@
 import {
-  Layout,
-  layout_default,
-  tailwind_default
-} from "/build/_shared/chunk-DXXIQEP4.js";
+  Layout
+} from "/build/_shared/chunk-6POOULR4.js";
 import "/build/_shared/chunk-TBLI4NQ3.js";
 import "/build/_shared/chunk-UZRWJVST.js";
 import "/build/_shared/chunk-CBFE7VJO.js";
@@ -41,7 +39,7 @@ import {
   __toESM
 } from "/build/_shared/chunk-PNG5AS42.js";
 
-// app/routes/_index.tsx
+// app/routes/home.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
 if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
   console.warn("remix:hmr: React Fast Refresh only works when the Remix compiler is running in development mode.");
@@ -49,7 +47,7 @@ if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
   prevRefreshReg = window.$RefreshReg$;
   prevRefreshSig = window.$RefreshSig$;
   window.$RefreshReg$ = (type, id) => {
-    window.$RefreshRuntime$.register(type, '"app\\\\routes\\\\_index.tsx"' + id);
+    window.$RefreshRuntime$.register(type, '"app\\\\routes\\\\home.tsx"' + id);
   };
   window.$RefreshSig$ = window.$RefreshRuntime$.createSignatureFunctionForTransform;
 }
@@ -58,34 +56,27 @@ var prevRefreshSig;
 if (import.meta) {
   import.meta.hot = createHotContext(
     //@ts-expect-error
-    "app\\routes\\_index.tsx"
+    "app\\routes\\home.tsx"
   );
+  import.meta.hot.lastModified = "1711304218777.1035";
 }
-var links = () => [{
-  rel: "stylesheet",
-  href: tailwind_default
-}, {
-  rel: "stylesheet",
-  href: layout_default
-}];
-function Index() {
+function Home() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "h-full bg-white dark:bg-slate-900", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Layout, {}, void 0, false, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 32,
+    fileName: "app/routes/home.tsx",
+    lineNumber: 24,
     columnNumber: 7
   }, this) }, void 0, false, {
-    fileName: "app/routes/_index.tsx",
-    lineNumber: 31,
+    fileName: "app/routes/home.tsx",
+    lineNumber: 23,
     columnNumber: 10
   }, this);
 }
-_c = Index;
+_c = Home;
 var _c;
-$RefreshReg$(_c, "Index");
+$RefreshReg$(_c, "Home");
 window.$RefreshReg$ = prevRefreshReg;
 window.$RefreshSig$ = prevRefreshSig;
 export {
-  Index as default,
-  links
+  Home as default
 };
-//# sourceMappingURL=/build/routes/_index-537J2KT6.js.map
+//# sourceMappingURL=/build/routes/home-Y2FRBAWS.js.map

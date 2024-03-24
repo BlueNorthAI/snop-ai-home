@@ -1,4 +1,7 @@
 import {
+  tailwind_default
+} from "/build/_shared/chunk-45MCZOWN.js";
+import {
   require_build
 } from "/build/_shared/chunk-EPFXGX35.js";
 import "/build/_shared/chunk-NMZL6IDN.js";
@@ -40,9 +43,6 @@ var import_session = __toESM(require_session());
 
 // app/styles/kendo.css
 var kendo_default = "/build/_assets/kendo-QGXVTYY5.css";
-
-// app/styles/tailwind.css?url
-var tailwind_default = "/build/_assets/tailwind-OCQSCTM7.css?url";
 
 // app/root.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
@@ -94,7 +94,7 @@ function App() {
   _s2();
   const data = useLoaderData();
   const [theme] = (0, import_remix_themes.useTheme)();
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("html", { lang: "en", className: clsx_default(theme, "h-full"), children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("html", { lang: "en", className: clsx_default(theme), children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("head", { children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("meta", { charSet: "utf-8" }, void 0, false, {
         fileName: "app/root.tsx",
@@ -172,4 +172,4 @@ export {
   AppWithProviders as default,
   links
 };
-//# sourceMappingURL=/build/root-BGRQVHBK.js.map
+//# sourceMappingURL=/build/root-AHLMZ7YM.js.map

@@ -35,8 +35,8 @@ import {
 // app/routes/snop.tsx
 var import_react2 = __toESM(require_react());
 
-// app/tailwind.css?url
-var tailwind_default = "/build/_assets/tailwind-VICJ2GDF.css?url";
+// app/tailwind.css
+var tailwind_default = "/build/_assets/tailwind-VICJ2GDF.css";
 
 // app/routes/snop.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
@@ -116,7 +116,7 @@ function classNames(...classes) {
 function Sidebar() {
   _s();
   const [open, setOpen] = (0, import_react2.useState)(true);
-  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex h-full", children: [
+  return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex h-screen", children: [
     /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: `bg-blue-900  ${open ? "w-20" : "w-16"} flex flex-col text-gray-100 duration-500 `, children: [
       /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex-1", children: [
         /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "flex items-center justify-center bg-white py-1", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("img", { className: "cursor-poniter mx-auto h-14 w-14 justify-center ", src: logo1_default, alt: "logo", onClick: () => setOpen(!open) }, void 0, false, {
@@ -229,4 +229,4 @@ export {
   Sidebar as default,
   links
 };
-//# sourceMappingURL=/build/routes/snop-W2X6OLNM.js.map
+//# sourceMappingURL=/build/routes/snop-M4D3LNPK.js.map

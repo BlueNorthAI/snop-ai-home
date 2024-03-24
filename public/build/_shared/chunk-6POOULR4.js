@@ -407,15 +407,7 @@ $RefreshReg$(_c32, "Layout");
 window.$RefreshReg$ = prevRefreshReg;
 window.$RefreshSig$ = prevRefreshSig;
 
-// app/styles/layout.css
-var layout_default = "/build/_assets/layout-DMLGCO3B.css";
-
-// app/styles/tailwind.css
-var tailwind_default = "/build/_assets/tailwind-OCQSCTM7.css";
-
 export {
-  Layout,
-  layout_default,
-  tailwind_default
+  Layout
 };
-//# sourceMappingURL=/build/_shared/chunk-DXXIQEP4.js.map
+//# sourceMappingURL=/build/_shared/chunk-6POOULR4.js.map

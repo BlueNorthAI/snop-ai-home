@@ -18,7 +18,7 @@ import {
 import { getUser, themeSessionResolver } from "~/session.server";
 
 import kendoStylesheetUrl from "./styles/kendo.css";
-import tailwindStylesheetUrl from "./styles/tailwind.css?url";
+import tailwindStylesheetUrl from "./styles/tailwind.css";
 
 export const links: LinksFunction = () => [
   { rel: "stylesheet", href: tailwindStylesheetUrl },
@@ -45,7 +45,7 @@ export function App() {
   const data = useLoaderData<typeof loader>();
   const [theme] = useTheme();
   return (
-    <html lang="en" className={clsx(theme,"h-full")}>
+    <html lang="en" className={clsx(theme)}>
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />

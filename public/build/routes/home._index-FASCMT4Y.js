@@ -17,6 +17,12 @@ import {
   __toESM
 } from "/build/_shared/chunk-PNG5AS42.js";
 
+// app/styles/layout.css?url
+var layout_default = "/build/_assets/layout-DMLGCO3B.css?url";
+
+// app/styles/tailwind.css?url
+var tailwind_default = "/build/_assets/tailwind-PNKRGFT2.css?url";
+
 // app/routes/home._index.tsx
 var import_jsx_dev_runtime = __toESM(require_jsx_dev_runtime());
 if (!window.$RefreshReg$ || !window.$RefreshSig$ || !window.$RefreshRuntime$) {
@@ -36,16 +42,22 @@ if (import.meta) {
     //@ts-expect-error
     "app\\routes\\home._index.tsx"
   );
-  import.meta.hot.lastModified = "1710584892364.9094";
 }
+var links = () => [{
+  rel: "stylesheet",
+  href: layout_default
+}, {
+  rel: "stylesheet",
+  href: tailwind_default
+}];
 function HomeIndex() {
   return /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)("div", { className: "", children: /* @__PURE__ */ (0, import_jsx_dev_runtime.jsxDEV)(Framework, {}, void 0, false, {
     fileName: "app/routes/home._index.tsx",
-    lineNumber: 25,
+    lineNumber: 33,
     columnNumber: 7
   }, this) }, void 0, false, {
     fileName: "app/routes/home._index.tsx",
-    lineNumber: 24,
+    lineNumber: 32,
     columnNumber: 10
   }, this);
 }
@@ -55,6 +67,7 @@ $RefreshReg$(_c, "HomeIndex");
 window.$RefreshReg$ = prevRefreshReg;
 window.$RefreshSig$ = prevRefreshSig;
 export {
-  HomeIndex as default
+  HomeIndex as default,
+  links
 };
-//# sourceMappingURL=/build/routes/home._index-MZBCTJYC.js.map
+//# sourceMappingURL=/build/routes/home._index-FASCMT4Y.js.map

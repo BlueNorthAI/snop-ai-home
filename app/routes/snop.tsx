@@ -12,7 +12,7 @@ import { Outlet, NavLink, Link } from "@remix-run/react";
 import { useState } from "react";
 
 import logoAssetUrl from "../images/logo1.png";
-import styles from "../tailwind.css?url";
+import styles from "../tailwind.css";
 
 
 export const links: LinksFunction = () => [
@@ -82,7 +82,7 @@ export default function Sidebar() {
   const [open, setOpen] = useState(true);
 
   return (
-    <div className="flex h-full">
+    <div className="flex h-screen">
       <div
         className={`bg-blue-900  ${
           open ? "w-20" : "w-16"
